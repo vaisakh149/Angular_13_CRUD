@@ -1,7 +1,7 @@
 {
   "productList": [
     {
-      "productName": "h",
+      "productName": "orange",
       "category": "Fruits",
       "freshness": "Brand New",
       "price": 2,
@@ -26,6 +26,15 @@
       "comment": "Good one",
       "date": "2022-02-07T18:30:00.000Z",
       "id": 3
+    },
+    {
+      "productName": "Mango",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 2,
+      "comment": "good",
+      "date": "2022-02-07T18:30:00.000Z",
+      "id": 4
     }
   ],
   "comments": [
