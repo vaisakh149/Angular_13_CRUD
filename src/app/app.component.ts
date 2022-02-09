@@ -53,6 +53,18 @@ export class AppComponent implements OnInit {
     this.dialog.open(DialogComponent,{
       width:'30%',
       data:row
+    }).afterClosed().subscribe(val=>{if(val==='update'){this.getAllproducts();}})
+  }
+  deleteProduct(id:number){
+    this.api.deleteProduct(id)
+    .subscribe({
+      next:(res)=>{
+        alert("Product Deleted Successfully");
+        this.getAllproducts();
+      },
+      error:()=>{
+        alert("Not Deleted Error");
+      }
     })
   }
 
